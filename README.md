@@ -7,8 +7,9 @@ Recently I have become interested in underwater photography using an action cam,
 ## Initial Workflow
 1. Find average value of the entire image
 2. Figure out how to hueshift the values in the image to increase the amount of red in the image (until average red value is like 75? this number might change)
-3. Generate a new RGB histogram of the image
-4. Normalize histogram values to get full range of color (I'm not sure if this step is going to make the image look weird, we will have to see with implementation)
+    - Convert the RGB image to HSV format to easily manipulate the Hue then convert back to figure out the hue shift? Not completely sure how that works  
+4. Generate a new RGB histogram of the image
+5. Normalize histogram values to get full range of color (I'm not sure if this step is going to make the image look weird, we will have to see with implementation)
 
 ## Some Concerns or unorganized thoughts I have
 - If there is too much change from frame to frame will the color correction look unnatural or weird
